@@ -50,7 +50,7 @@ jobs:
       - name: Run tests
         run: cargo test --verbose
   build-status:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs: [build]
     if: always()
     steps:
